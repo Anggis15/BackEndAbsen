@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Data Absensi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Form Input Data Absensi Karyawan</h2>
+
+    <div class="card shadow">
+        <div class="card-header text-white bg-success">
+            <h5 class="mb-0">Input Absensi</h5>
+        </div>
+        <div class="card-body">
+            <form action="#" method="POST">
+                <div class="mb-3">
+                    <label for="namaKaryawan" class="form-label">Nama Karyawan</label>
+                    <input type="text" class="form-control" id="namaKaryawan" name="namaKaryawan" placeholder="Masukkan nama karyawan" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="tanggal" class="form-label">Tanggal</label>
+                    <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="jamMasuk" class="form-label">Jam Masuk</label>
+                    <input type="time" class="form-control" id="jamMasuk" name="jamMasuk" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="jamKeluar" class="form-label">Jam Keluar</label>
+                    <input type="time" class="form-control" id="jamKeluar" name="jamKeluar" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="status" class="form-label">Status Kehadiran</label>
+                    <select class="form-select" id="status" name="status" required>
+                        <option value="">Pilih Status</option>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Terlambat">Terlambat</option>
+                        <option value="Absen">Absen</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <a href="menu/login.html" class="btn btn-secondary">Kembali</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
